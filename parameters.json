@@ -1,0 +1,8 @@
+{
+    "part_number": 153,
+    "open_angle": 91,
+    "close_angle": 265,
+    "base_diameter": 34.5,
+    "cam_profile": ["Intake", "Exhaust", "Unique profile"],
+    "software_CAD": ["Autodesk Inventor", "AutoCAD", "SolidWorks", "Creo Parametric"]
+}
