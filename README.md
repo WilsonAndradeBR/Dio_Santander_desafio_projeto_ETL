@@ -16,3 +16,10 @@ Irei apresentar como exemplo um eixo comando de válvulas, que nos motores de co
 
 ## O equipamento de medição
 O equipamento, chamado MMCV (Módulo de medição de comando de válvulas), utiliza um encoder rotativo e um encoder linear para fazer uma varredura no perfil do came, registrando o deslocamento linerar gerado a cada divisão de grau na rotação da peça. Ao final da varredura, é gerado um arquivo de texto com as coordenadas polares (grau, deslocamento).
+
+Varredura para captar as coordenadas polares do perfil do came
+
+![MMCV1](https://github.com/user-attachments/assets/a29f931c-4aa8-45ef-85de-1ac365e130cf)
+
+Interface do equipamento de medição (MMCV) coma representação gráfica do perfil
+![MMCV2](https://github.com/user-attachments/assets/592db50b-2c1f-4806-9b52-61fa7c5727ca)
