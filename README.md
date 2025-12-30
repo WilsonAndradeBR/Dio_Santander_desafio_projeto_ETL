@@ -1,8 +1,8 @@
 # Desafio de projeto ETL-DIO-Santander 2025
 
-Sou iniciante em programação Python e este é meu primeiro projeto na plataforma DIO.
-Antes de encarar o “Bootcamp Santander 2025 – Ciência de Dados com Python”, na DIO, eu já havia desenvolvidos alguns códigos para automatizar algumas tarefas. Ter obtido um resultado satisfatório me deixou empolgado para me aprofundar mais na linguagem e me tornar um desenvolvedor.
-Quanto a este desafio de projeto DIO, assistindo às aulas de ETL, do professor Diego Bruno, percebi que, intuitivamente, alguns de meus projetos já seguiam a estrutura ETL – extrair, transformar, carregar – e que eu poderia apresentar um deles neste primeiro desafio.
+Sou iniciante em programação Python e este é meu primeiro projeto na plataforma **DIO**.
+Antes de encarar o **Bootcamp Santander 2025 – Ciência de Dados com Python**, na DIO, eu já havia desenvolvidos alguns códigos para automatizar algumas tarefas. Ter obtido um resultado satisfatório me deixou empolgado para me aprofundar mais na linguagem e me tornar um desenvolvedor.
+Quanto a este desafio de projeto **DIO**, assistindo às aulas de ETL, do professor Diego Bruno, percebi que, intuitivamente, alguns de meus projetos já seguiam a estrutura **ETL** – **extrair, transformar, carregar** – e que eu poderia apresentar um deles neste primeiro desafio.
 Como sou iniciante, considero que meus códigos são “rústicos”. Nem tudo segue boas práticas. Então, tenho certeza que meus projetos serão lapidados com o passar do tempo, conforme aprimoro meu conhecimento e a colaboração dos colegas.
 
 ## O código
@@ -134,13 +134,17 @@ O Autodesk Inventor importa pontos de um arquivo .xlsx. É preciso especificar a
 
 ### AutoCad
 O AutoCad exige um arquivo .scr (Script AutoLISP) que lista os comandos necessários para a geração da curva spline:
-- "_.OSMODE 0" desliga o Modo "Object Snap".
-- "_SPLINE" ativa o comando "Spline" que lê as coordenadas que estão separadas por vírgula na ordem x, y e z.
-- No AutoCad, a tecla espaço tem a mesma função que ENTER (return) então, cada ' ' representa um comando RETURN para desativar o comando SPLINE.
-- "(setvar "OSMODE" 16383)" reabilita o Modo "Object Snap".
-- "\x1b" no final do script representa o comando "ESC" para cancelar qualquer comando ainda ativo.
+- "_.OSMODE 0" desliga o Modo "Object Snap"
+- "_SPLINE" ativa o comando "Spline" que lê as coordenadas que estão separadas por vírgula na ordem x, y e z
+- No AutoCad, a tecla espaço tem a mesma função que ENTER (return) então, cada ' ' representa um comando RETURN para desativar o comando SPLINE
+- "(setvar "OSMODE" 16383)" reabilita o Modo "Object Snap"
+- "\x1b" no final do script representa o comando "ESC" para cancelar qualquer comando ainda ativo
+
+Este arquivo .scr pode ser aberto em um editor de texto.
 
 <img height="300" src="https://github.com/user-attachments/assets/ff4b7a47-df88-4a4d-8d3f-e174363cef5c">
+<img width="300" height="300" src="https://github.com/user-attachments/assets/dd2103fd-890e-42ff-983e-2f069937c293">
+
 
 ### SolidWorks
 O SolidWorks exige apenas um arquivo .txt com as coordenadas x, y e z separadas por tabulação, sem necessidade de cabeçalho.
@@ -182,3 +186,10 @@ for profile in part_parameters['cam_profile']:
             coord_load_df.to_csv(f'PROFILE_POINTS_{part_number}{tipo}.pts', sep='\t', index=False, header=False)
         software_df = pd.DataFrame()
 ```
+
+#### Peça real e peça desenvolvida no Autodesk Inventor
+<img width="300" height="300" src="https://github.com/user-attachments/assets/cc8928ec-5b77-40b1-89cf-4b0ee702ef7b">
+<img width="300" height="300" src="https://github.com/user-attachments/assets/d8847439-c212-447c-bbde-0427cf040110">
+
+
+#### Na pasta Loads estão todos os arquivos gerados ao se executar o código.
